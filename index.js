@@ -1,6 +1,6 @@
-function findMatching(source, sought) {
+function findMatching(source, found) {
   return source.filter(
-    (possibleMatch) => possibleMatch.toLowerCase() === sought.toLowerCase()
+    (possibleMatch) => possibleMatch.toLowerCase() === found.toLowerCase()
   );
 }
 
@@ -11,6 +11,6 @@ function fuzzyMatch(source, testString) {
   );
 }
 
-function matchName(source, soughtName) {
-  return source.filter((record) => record.name === soughtName);
+function matchName(source, foundName) {
+  return source.filter((record) => record.name === foundName);
 }
